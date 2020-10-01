@@ -1,3 +1,5 @@
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,9 +20,10 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0; 
+	/* dont forget to get rid of that^^ */
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -44,11 +48,116 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 0; 
 }
 
-*{
-	border: 2px solid black;
-	box-sizing: border-box;
+p {
+	font-family: "Roboto Mono";
 }
 
+img {
+	width: 150px;
+}
+
+.navbars {
+	display: block;
+	margin: 3%;
+}
+
+nav {
+	margin: 0 auto;
+}
+
+button {
+	margin: 0 0 0 14%;
+	display: inline-block;
+	width: 6em;
+	height: 3rem;
+	border-radius: 15%;
+	color: white;
+}
+
+.plan {
+	background-color: #FF764E;
+}
+
+.learn {
+	background-color: #5ED3EB;
+}
+
+.involved {
+	background-color: #FFCD69;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+.test {
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 25px ;
+}
+.test img {
+	margin-left: 5%;
+	border-radius: 50%;
+}
+
+.header {
+	position: relative;
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	margin-left: 10%;
+}
+
+.header div {
+	text-align: center;
+}
+
+.header div p {
+	margin-bottom: 3%;
+}
+
+h1 {
+	margin-bottom: 5%;
+	font-family: "Chelsea Market";
+}
+
+
+.sub-header {
+	background-color: #DDB9A3;
+	margin: 2%;
+	height: 2%;
+	padding: 5px;
+}
+
+.sub-header p {
+	margin: 1%;
+	color: white;
+}
+
+.info img{
+	display: block;
+	margin: 0 auto;
+}
+
+.info p {
+	display: block;
+	text-align: center;
+	width: 20%;
+	margin: 2% auto;
+}
+
+.footer-img {
+	height: 20em;
+	width: 100%;
+}
+
+
+footer nav {
+	margin: 0;
+	width: 100%;
+	background-color: #F9E7DC;
+}
+
+s {
+	font-weight: bold;
+}
